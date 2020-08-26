@@ -116,14 +116,12 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: #fff;
+  background: black;
   z-index: 997;
   padding: 15px 0;
-  border-bottom: 1px solid #e6f2fb;
 }
 
 #header.header-scrolled {
-  border-color: #fff;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -138,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #16507b;
+  color: black;
 }
 
 #header .logo img {
@@ -403,14 +401,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/outside-2.jpg") top center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0,0,0, 0.1);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -547,13 +545,13 @@ section {
   text-transform: uppercase;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #124265;
+  color: black;
 }
 
 .section-title p {
   margin-bottom: 0;
   font-size: 14px;
-  color: #919191;
+  color: black;
 }
 
 /*--------------------------------------------------------------
@@ -1933,4 +1931,8 @@ section {
   background: #3194db;
   color: #fff;
   text-decoration: none;
+}
+.section-title h2::after {
+  background: black !important;
+
 }
