@@ -1,6 +1,5 @@
 # 11-Airport-Dr
 
-<img src="icon.png" align="right" />
 
 # The Airport Veterinary Center
 > A Github pages website used as a web brochure for a piece of real estate that is for sale.
