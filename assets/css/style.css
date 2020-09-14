@@ -287,6 +287,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 990px) {
+.mobile-nav a {
+
+  color: black !important;
+
+}
+}
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -357,6 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav .drop-down > a {
   padding-right: 35px;
+  color: black !important;
 }
 
 .mobile-nav .drop-down ul {
