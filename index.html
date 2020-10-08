@@ -118,23 +118,22 @@
          padding-right: 8em;
          padding-bottom: 8em;
          }
+         .bx-chevron-left:before, .bx-chevron-right:before{
+         display: none !important;
+         }
          .carousel-control-prev-icon,
          .carousel-control-next-icon {
-         outline: white;
-         background-size: 100%, 100%;
+         width: 50px !important;
+         height: 50px !important;
+         background-color: #000;
          border-radius: 50%;
-         border: 1px solid white;
-         background-image: none;
-         font-size: 5em !important;
-         color: white;
-         }
-         .carousel-control-prev-icon {
-         position: relative;
-         right: 10%;
+         top: calc(50% - 25px;)
          }
          .carousel-control-next-icon {
-         position: relative;
-         left: 10%;
+         right:   5%;
+         }
+         .carousel-control-prev-icon{     
+         left:   5%;
          }
          .carousel .carousel-inner img {
          object-fit: cover !important;
@@ -145,8 +144,8 @@
          -o-background-size: cover;
          background-size: cover !important;
          }
-                 .carousel-inner .img-fluid-c{
-                  min-height: 100% !important;
+         .carousel-inner .img-fluid-c{
+         min-height: 100% !important;
          }
          @media screen and (max-width: 1300px) {
          .carousel-inner {
@@ -158,9 +157,7 @@
          padding-bottom: 0em;
          }
          }
-             /* Makes images fully responsive */
-    
-
+         /* Makes images fully responsive */
       </style>
       <!-- =======================================================
          * Template Name: OnePage - v2.1.0
@@ -223,7 +220,7 @@
             </div>
             <!--Grid column-->
             <!--Carousel Wrapper-->
-            <div id="carousel-example-1z" class="carousel slide carousel-fade  bg-black">
+            <div id="carousel-example-1z" class="carousel slide carousel-fade  bg-transprent">
                <!--Slides-->
                <!--First slide-->
                <div class="carousel-inner" role="listbox">
@@ -254,11 +251,11 @@
                   <!--/.Slides-->
                   <!--Controls-->
                   <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-prev-icon" aria-hidden="true"><i class='bx bx-chevron-left' ></i></span>
                   <span class="sr-only">Previous</span>
                   </a>
                   <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="carousel-control-next-icon" aria-hidden="true"><i class='bx bx-chevron-right' ></i></span>
                   <span class="sr-only">Next</span>
                   </a>
                   <!--/.Controls-->
@@ -784,13 +781,13 @@
       <!-- Template Main JS File -->
       <script src="assets/js/main.js"></script>
       <script type="text/javascript">
-        function init_carousel() {
-            H = +($(window).height() /* -height here  */); // or $('.carousel-inner') as you want ...
-            $('.carousel-inner img').css('height', H + 'px');
-        }
-        window.onload = init_carousel;
-        init_carousel();
-           
+         function init_carousel() {
+             H = +($(window).height() /* -height here  */); // or $('.carousel-inner') as you want ...
+             $('.carousel-inner img').css('height', H + 'px');
+         }
+         window.onload = init_carousel;
+         init_carousel();
+            
       </script>
       <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
    </body>
