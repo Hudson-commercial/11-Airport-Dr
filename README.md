@@ -15,12 +15,11 @@
 
 ## About
 
-This is a professionally designed web boruche for marketing purposes of the proposed sale of a Veterinary pracice and real esate.
-
+This is a professionally designed website for marketing purposes of the proposed sale of a Veterinary practice and real estate.
 ## Tools
 
 Created with the one page theme designed by bootstrapmade.com
-
-- [BootstrapMade](https://bootstrapmade.com/) - They specialized in designing and creating elegant, clean and beautiful
-free website templates using Bootstrap, the most popular HTML, CSS & JS framework.
+- [BootstrapMade](https://bootstrapmade.com/) - They specialized in designing and creating elegant, clean, and beautiful
+Free website templates using Bootstrap, the most popular HTML, CSS & JS framework.
 - [Bootstrap](https://getbootstrap.com/) - Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+
