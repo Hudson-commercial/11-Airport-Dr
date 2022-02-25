@@ -157,6 +157,22 @@
          }
          }
          /* Makes images fully responsive */
+
+
+                  /*
+         *
+         * ==========================================
+         * CUSTOM UTIL CLASSES
+         * ==========================================
+         *
+         */
+         .navbar-cutom {
+         transition: all 0.4s;
+         }
+      
+             .scrolled{
+         background:#000 !important;
+         }
       </style>
       <!-- =======================================================
          * Template Name: OnePage - v2.1.0
@@ -167,7 +183,7 @@
    </head>
    <body>
       <!-- ======= Header ======= -->
-      <header id="header" class="fixed-top ">
+      <header id="header" class="fixed-top navbar-alt navbar-cutom ">
          <div class="container d-flex align-items-center">
             <h1 class="logo mr-auto font-weight-bold text-white "><a class="text-white" href="index.html">For Sale</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
@@ -192,13 +208,13 @@
                   </div>
                </div>
                <div class="text-center">
-                  <a href="#about" class="   scrollto  mb-4 pb-4">
+<!--                   <a href="#about" class="   scrollto  mb-4 pb-4">
                      <svg width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle mt-5 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path fill-rule="evenodd" d="M4.646 7.646a.5.5 0 0 1 .708 0L8 10.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/>
                         <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5z"/>
                      </svg>
-                  </a>
+                  </a> -->
                </div>
             </div>
             <div class="row icon-boxes">
@@ -790,4 +806,14 @@
       </script>
       <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
    </body>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+   $(document).ready(function() {
+         $(window).scroll(function(){
+           $('.navbar-alt').toggleClass('scrolled', $(this).scrollTop() > 50);
+         });
+         
+         $('body').bootstrapMaterialDesign(); });  
+
+   </script>
 </html>
